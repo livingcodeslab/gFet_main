@@ -673,7 +673,7 @@ void sendDebug()
     ssr_buff[reg_count++] = digitalRead(i) + '0';
   }
 
-  char pump_buff[4];
+  char pump_buff[5]; // use indexes 0—3. Index 4 holds null terminating char.
   sprintf(pump_buff, "%i", 9999);
 
   ssr_buff[26] = pump_buff[0];
