@@ -117,7 +117,8 @@ bool wash(args_t arg1, uint16_t var1, uint16_t var2, uint16_t var3)
     {
       wash(args_t::CHANNEL, i, var2, var3);
     }
-    break;
+    resetSystem();
+    return true;
 
   case args_t::COLLECTION:
     digitalWrite(WASH_SSR, HIGH);
