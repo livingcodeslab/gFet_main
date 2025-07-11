@@ -144,6 +144,7 @@ bool wash(args_t arg1, uint16_t var1, uint16_t var2, uint16_t var3)
     }
     digitalWrite(CHEMICAL_SSR_ARRAY[var1 -1][1], LOW);
     digitalWrite(CHEMICAL_SSR_ARRAY[var1 -1][0], HIGH);
+    digitalWrite(PI_SSR, HIGH);
     break;
 
   default:
